@@ -10,4 +10,8 @@ def delete_file(filename):
 
 
 if __name__ == "__main__":
-    delete_file('test_file.txt')
+    if os.path.exists('test_file.txt'):
+        delete_file('test_file.txt')
+        print('test_file.txt found and deleted.')
+    else:
+        print('test_file.txt not found.')

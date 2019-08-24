@@ -2,8 +2,9 @@
 It creates a file called test_file, tests that it exists,
 then deletes it, and tests that it has been deleted."""
 
-import unittest
 import os
+import unittest
+
 import remove_file
 
 
